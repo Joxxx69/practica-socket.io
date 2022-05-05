@@ -24,7 +24,7 @@ socket.on('disconnect', () => {
 });
 
 socket.on('enviar-mensaje-todos',(mensaje) => {
-    console.log('Aqui!',mensaje);
+    console.log('Aqui!',mensaje);  
 })
 
 btnEnviar.addEventListener('click', () => {

@@ -4,7 +4,7 @@ const socketController = socket => {
     console.log('connected client', socket.id); 
 
     socket.on('disconnect', () => {
-        console.log('disconnected client');
+        console.log('disconnected client',socket.id);
     });
 
     socket.on('enviar-mensaje', (payload,callback) => {
