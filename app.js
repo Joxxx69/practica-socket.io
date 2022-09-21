@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 const express = require('express');
 const app = express();
 const port = process.env.PORT;
@@ -13,6 +14,7 @@ const { socketController } = require('./sockets/controller.sockets');
 
 // middlewares
 app.use(express.static('public'));
+//app.use( ({origin:['www.ejemplo.com']})); // permitir solo ese origen
 app.use(cors());
 
 // Sockets
